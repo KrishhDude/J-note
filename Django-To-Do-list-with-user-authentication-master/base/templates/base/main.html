@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description"
-        content="This is to do list implemented using Django by Dennis Ivy who is a full stack web developer.">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>To Do Items</title>
     <meta name="description" content="">
@@ -26,8 +23,7 @@
         h3,
         h4,
         h5,
-        h6,
-            {
+        h6,{
             font-family: 'Raleway', sans-serif;
         }
 
@@ -41,16 +37,20 @@
         }
 
         .container {
-            max-width: 550px;
+            max-width: 40%;
             margin: auto;
             background-color: #fff;
-            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 14px 28px rgba(0,0,0,.25),
+                0px 10px 10px rgba(0,0,0,.22);
         }
 
         input {
-            outline: none;
+            background-color: #eee;
             border: none;
+            margin: 8px 0;
+            padding: 12px 15px;
+            text-decoration: none;
+            width: 100%;
         }
 
         .header-bar {
@@ -59,7 +59,8 @@
             color: #fff;
             padding: 10px;
             border-radius: 5px 5px 0 0;
-            background: linear-gradient(90deg, #EEA390 0%, #EB796F 43%, #EB796F 100%);
+            background-color: #2a5e3c;
+            background: linear-gradient(to right, #71ad86, #2a5e3c);
         }
 
         .header-bar a {
@@ -178,22 +179,68 @@
 
         ::placeholder {
             font-weight: 300;
+            font-weight: italic;
             opacity: 0.5;
         }
 
         .button {
-            border: 1px solid #757575;
-            background-color: #FFF;
-            color: #EB796F;
-            padding: 10px;
+            border-radius: 20px;
+            background-color: palegreen;
+            color: black;
             font-size: 14px;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .searchbtn{
+            padding-left: 10px;
+        }
+        button:active{
+            transform: scale(0.95);
+        }
+        button.press{
+            background-color: transparent;
+            border-color: white;
         }
 
         .card-body {
             padding: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-family: monospace;
+            font-weight: 100;
+            line-height: 20px;
+            letter-spacing: .2px;
+            margin: 20px 0;
+        }
+        a{
+            color: #333;
+            text-decoration:none;
+            font-size: 14px;
+            font-family: monospace;
+            font-weight: 100;
+            line-height: 20px;
+            letter-spacing: .2px;
+            margin: 20px 0;
+        }
+        #noteslink h2{
+            padding: 30px 10px;
+            margin-bottom: -20px;
+            color: #134825;
+            text-shadow: rgba(0,5,10,.22);
+            text-shadow: uppercase;
+            text-decoration: underline;
+        }
+        #logout{
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            font-style: bold;
+            text-decoration: underline;
+            color: whitesmoke;
+            font-family: monospace;
         }
     </style>
 </head>
